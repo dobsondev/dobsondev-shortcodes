@@ -1,36 +1,21 @@
-dobsondev-shortcodes
+DobsonDev Shortcodes
 ====================
 
 A collection of helpful shortcodes for use with WordPress sites.
 
-Plugin Name: DobsonDev Shortcodes
-Plugin URI: [http://dobsondev.com/portfolio/dobsondev-shortcodes/](http://dobsondev.com/portfolio/dobsondev-shortcodes/)
-Description: A collection of helpful shortcodes.
-Version: 0.668
-Author: Alex Dobson
-Author URI: [http://dobsondev.com/](http://dobsondev.com/)
-License: GPLv2
-
 Copyright 2014  Alex Dobson  (email : [alex@dobsondev.com](mailto:alex@dobsondev.com))
 
-This program is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License, version 2, as
-published by the Free Software Foundation.
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License, version 2, as published by the Free Software Foundation.
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+This program is distributed in the hope that it will be useful,but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
-== Description ==
+# Description
 
 A collection of helpful shortcodes that I use in my own work that I wanted to share with the WordPress Community. If you want to suggest any shortcodes please email me at [alex@dobsondev.com](mailto:alex@dobsondev.com).
 
-= Shortcodes Included =
+## Shortcodes Included
 
 * Embed PDFs - Embeds PDFs into pages rather than separate links.
 * Embed [GitHub Gists](http://gist.github.com/) - Easily add GitHub gists to your site or blog.
@@ -68,12 +53,12 @@ This Shortcode will embed a Twitch stream's chat into the page. The username att
 
 This Shortcode will embed a YouTube video into the page. The video attribute is the YouTube video ID of the video you want to embed into the page. It can be found at the end of the URL on YouTube. For example, the video located at [https://www.youtube.com/watch?v=uCdfze1etec](https://www.youtube.com/watch?v=uCdfze1etec) has the video ID "uCdfze1etec". You will always find the video ID after the "watch?v=". The video attribute is required. The width and height attributes will set the size of the embedded video, and both are optional attributes. If they are not entered the width will default to 560 and the height will default to 315.
 
-== Installation ==
+# Installation
 
 1. Upload the entire dobsondev-shortcodes folder to the /wp-content/plugins/ directory.
 1. Activate the plugin through the 'Plugins' menu in WordPress.
 
-== Frequently Asked Questions ==
+# Frequently Asked Questions
 
 For more information about the shortcodes avaliable through the plugin please visit the plugin site. The site contains a description and usage information for each shortcode avaliable through the plugin.
 
@@ -81,15 +66,15 @@ For more information about the shortcodes avaliable through the plugin please vi
 
 If you have any shortcodes you want to suggest or to add to the plugin, please contact me at [alex@dobsondev.com](mailto:alex@dobsondev.com).
 
-== Changelog ==
+# Changelog
 
-= - 0.668 - =
+## 0.668
 
 **New Features**
 
 * Added a Shortcode for embedding Twitch.tv stream chats on your site
 
-= - 0.667 - =
+## 0.667
 
 **New Features**
 
@@ -104,6 +89,6 @@ If you have any shortcodes you want to suggest or to add to the plugin, please c
 
 * Refined method for checking HTTP Headers
 
-= - 0.666 - =
+## 0.666
 
 * Initial Beta Release
