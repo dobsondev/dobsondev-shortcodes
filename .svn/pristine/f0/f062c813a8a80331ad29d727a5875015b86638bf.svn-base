@@ -1,0 +1,23 @@
+= 0.668 =
+
+New Features
+* Added a Shortcode for embedding Twitch.tv stream chats on your site
+
+Bug Fixes
+* Added esc_url() to all URL sources for shortcodes
+
+= 0.667 =
+
+New Features
+* Added a Shortcode for embedding Twitch.tv streams on your site
+* Added a Shortcode for embedding YouTube videos on your site
+
+Changes
+* GitHub Gist Shortcode changed from \[github_gist source=""\] to \[embedGist source=""\]
+
+Bug Fixes
+* Refined method for checking HTTP Headers
+
+= 0.666 =
+
+* Initial Beta Release
