@@ -73,6 +73,9 @@ If you have any shortcodes you want to suggest or to add to the plugin, please c
 
 * Added a Shortcode for embedding Twitch.tv stream chats on your site
 
+**Bug Fixes**
+* Added esc_url() to all URL sources for shortcodes
+
 = - 0.667 - =
 
 **New Features**
