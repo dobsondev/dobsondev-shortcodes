@@ -1,6 +1,6 @@
 === DobsonDev Shortcodes ===
 Contributors: DobsonDev
-Donate link: https://dobsondev.com/donate/
+Donate link: http://dobsondev.com/donate/
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl.html
 Tags: dobsondev, shortcodes, pdf, portable document format, github gists, github, gists, twitch streams, twitch, YouTube video, YouTube
