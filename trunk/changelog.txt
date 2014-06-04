@@ -1,3 +1,9 @@
+= 0.670 =
+
+New Features
+
+* Added shortcodes for inline code snippets
+
 = 0.669 =
 
 New Features

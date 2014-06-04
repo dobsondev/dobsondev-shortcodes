@@ -3,7 +3,7 @@
  * Plugin Name: DobsonDev Shortcodes
  * Plugin URI: http://dobsondev.com/portfolio/dobsondev-shortcodes/
  * Description: A collection of helpful shortcodes.
- * Version: 0.669
+ * Version: 0.670
  * Author: Alex Dobson
  * Author URI: http://dobsondev.com/
  * License: GPLv2
@@ -128,5 +128,23 @@ function dobson_embed_youtube($atts) {
   }
 }
 add_shortcode('embedYouTube', 'dobson_embed_youtube');
+
+
+/* Adds a shortcode for start tags for displaying inline code */
+function dobson_inline_code_start($atts) {
+  extract(shortcode_atts(array(
+  ), $atts));
+  return '<strong><code>';
+}
+add_shortcode('startCode', 'dobson_inline_code_start');
+
+
+/* Adds a shortcode for end tags for displaying inline code */
+function dobson_inline_code_end($atts) {
+  extract(shortcode_atts(array(
+  ), $atts));
+  return '</strong></code>';
+}
+add_shortcode('endCode', 'dobson_inline_code_end');
 
 ?>
