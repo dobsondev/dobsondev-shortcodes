@@ -49,9 +49,19 @@ This Shortcode will embed a Twitch stream's chat into the page. The username att
 
 **Embed YouTube Video**
 
-[embedYouTube video="video-id" width="###" height="###"\]
+[embedYouTube video="video-id" width="###" height="###"]
 
 This Shortcode will embed a YouTube video into the page. The video attribute is the YouTube video ID of the video you want to embed into the page. It can be found at the end of the URL on YouTube. For example, the video located at [https://www.youtube.com/watch?v=uCdfze1etec](https://www.youtube.com/watch?v=uCdfze1etec) has the video ID "uCdfze1etec". You will always find the video ID after the "watch?v=". The video attribute is required. The width and height attributes will set the size of the embedded video, and both are optional attributes. If they are not entered the width will default to 560 and the height will default to 315.
+
+**Inline Code Snippets**
+
+[startCode]
+
+This shortcode will create the start tags for a code snippet which will then be ended using the [endCode] shortcode. If you use these two together you can create small inline code samples that look great, are esay to copy, and distinguish themselves from the rest of your text content in appearance. These make it easy to include code snippets without having to switch to the HTML editor in WordPress.
+
+[endCode]
+
+This shortcode will create the end tags for the code snippet started by [startCode]. If you use these two together you can create small inline code samples that look great, are esay to copy, and distinguish themselves from the rest of your text content in appearance. These make it easy to include code snippets without having to switch to the HTML editor in WordPress.
 
 # Installation
 
@@ -67,6 +77,12 @@ For more information about the shortcodes avaliable through the plugin please vi
 If you have any shortcodes you want to suggest or to add to the plugin, please contact me at [alex@dobsondev.com](mailto:alex@dobsondev.com).
 
 # Changelog
+
+## 0.670
+
+**New Features**
+
+* Added shortcodes for inline code snippets
 
 ## 0.669
 
