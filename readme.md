@@ -22,6 +22,8 @@ A collection of helpful shortcodes that I use in my own work that I wanted to sh
 * Embed [Twitch Stream](http://twitch.tv/) - Embeds a Twitch Stream into the page.
 * Embed [Twitch Stream](http://twitch.tv/) Chat - Embeds the chat from a Twitch Stream into the page.
 * Embed [YouTube Video](http://youtube.com/) - Embeds a YouTube Video into the page.
+* Inline Code - Displays inline code snippets that are visually different than the rest of your body text.
+* Code Block - Displays a simple code block for simple, small pieces of code.
 
 **Embed PDF**
 
