@@ -5,7 +5,7 @@ License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl.html
 Tags: dobsondev, shortcodes, pdf, portable document format, github gists, github, gists, twitch streams, twitch, YouTube video, YouTube
 Requires at least: 2.5
-Tested up to: 3.8.1
+Tested up to: 3.9.1
 Stable tag: 0.671
 
 Add a collection of helpful shortcodes to your site.
@@ -21,7 +21,7 @@ A collection of helpful shortcodes that I use in my own work that I wanted to sh
 * Embed [Twitch Stream](http://twitch.tv/) - Embeds a Twitch Stream into the page.
 * Embed [Twitch Stream](http://twitch.tv/) Chat - Embeds the chat from a Twitch Stream into the page.
 * Embed [YouTube Video](http://youtube.com/) - Embeds a YouTube Video into the page.
-* Inline Code - Displays inline code snippets that are visually different than the rest of your body text.
+* Inline Code - Displays inline code snippets that are visually different than the body text.
 * Code Block - Displays a simple code block for simple, small pieces of code.
 
 **Embed PDF**
