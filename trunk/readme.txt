@@ -6,7 +6,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 Tags: dobsondev, shortcodes, pdf, portable document format, github gists, github, gists, twitch streams, twitch, YouTube video, YouTube
 Requires at least: 2.5
 Tested up to: 3.8.1
-Stable tag: 0.670
+Stable tag: 0.671
 
 Add a collection of helpful shortcodes to your site.
 
@@ -21,6 +21,8 @@ A collection of helpful shortcodes that I use in my own work that I wanted to sh
 * Embed [Twitch Stream](http://twitch.tv/) - Embeds a Twitch Stream into the page.
 * Embed [Twitch Stream](http://twitch.tv/) Chat - Embeds the chat from a Twitch Stream into the page.
 * Embed [YouTube Video](http://youtube.com/) - Embeds a YouTube Video into the page.
+* Inline Code - Displays inline code snippets that are visually different than the rest of your body text.
+* Code Block - Displays a simple code block for simple, small pieces of code.
 
 **Embed PDF**
 
@@ -56,11 +58,21 @@ This Shortcode will embed a YouTube video into the page. The video attribute is 
 
 [startCode]
 
-This shortcode will create the start tags for a code snippet which will then be ended using the [endCode] shortcode. If you use these two together you can create small inline code samples that look great, are esay to copy, and distinguish themselves from the rest of your text content in appearance. These make it easy to include code snippets without having to switch to the HTML editor in WordPress.
+This shortcode will create the start tags for an inline code snippet which will then be ended using the [endCode] shortcode. If you use these two together you can create small inline code samples that look great, are easy to copy, and distinguish themselves from the rest of your text content in appearance. These make it easy to include code snippets without having to switch to the HTML editor in WordPress.
 
 [endCode]
 
-This shortcode will create the end tags for the code snippet started by [startCode]. If you use these two together you can create small inline code samples that look great, are esay to copy, and distinguish themselves from the rest of your text content in appearance. These make it easy to include code snippets without having to switch to the HTML editor in WordPress.
+This shortcode will create the end tags for the inline code snippet started by [startCode]. If you use these two together you can create small inline code samples that look great, are esay to copy, and distinguish themselves from the rest of your text content in appearance. These make it easy to include code snippets without having to switch to the HTML editor in WordPress.
+
+**Code Blocks**
+
+[startCodeBlock]
+
+This shortcode will create the start tags for a code block which will then be ended using the [endCodeBlock] shortcode. If you use these two together you can create small, simple code blocks that have a black background with white text, which is the common convention for code blocks. This is great for showing Terminal commands or very small code snippets (I recommend using the embed GitHub Gists shortcode for longer code samples).
+
+[endCodeBlock]
+
+This shortcode will create the end tags for the code snippet started by [startCode]. If you use these two together you can create small, simple code blocks that have a black background with white text, which is the common convention. This is great for showing Terminal commands or very small code snippets (I recommend using the embed GitHub Gists shortcode for longer code samples).
 
 == Installation ==
 
@@ -76,6 +88,17 @@ For more information about the shortcodes avaliable through the plugin please vi
 If you have any shortcodes you want to suggest or to add to the plugin, please contact me at [alex@dobsondev.com](mailto:alex@dobsondev.com).
 
 == Changelog ==
+
+= - 0.671 - =
+
+**New Features**
+
+* Added a shortcode for displaying simple code blocks
+
+**Bug Fixes**
+
+* Renamed 'youtube-container' CSS class to 'dobdev_youtube_container' in order to ensure uniqueness
+* Added default CSS for the embedded inline code
 
 = - 0.670 - =
 

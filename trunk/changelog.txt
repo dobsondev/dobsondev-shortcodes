@@ -1,3 +1,14 @@
+= 0.671 =
+
+New Features
+
+* Added a shortcode for displaying simple code blocks
+
+Bug Fixes
+
+* Renamed 'youtube-container' CSS class to 'dobdev_youtube_container' in order to ensure uniqueness
+* Added default CSS for the embedded inline code
+
 = 0.670 =
 
 New Features

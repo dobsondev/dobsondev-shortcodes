@@ -3,7 +3,7 @@
  * Plugin Name: DobsonDev Shortcodes
  * Plugin URI: http://dobsondev.com/portfolio/dobsondev-shortcodes/
  * Description: A collection of helpful shortcodes.
- * Version: 0.670
+ * Version: 0.671
  * Author: Alex Dobson
  * Author URI: http://dobsondev.com/
  * License: GPLv2
@@ -121,7 +121,7 @@ function dobson_embed_youtube($atts) {
   if (strpos($source_headers[0], '404 Not Found')) {
     return '<p> Invalid YouTube video ID. Please check your YouTube video ID. </p>';
   } else {
-    return '<div class="youtube-container">'
+    return '<div class="dobdev_youtube_container">'
     . '<iframe width="' . $width . '" height="' . $height . '" src="//www.youtube.com/embed/' . $video
     . '" frameborder="0" allowfullscreen></iframe>'
     . '</div>';
@@ -134,7 +134,7 @@ add_shortcode('embedYouTube', 'dobson_embed_youtube');
 function dobson_inline_code_start($atts) {
   extract(shortcode_atts(array(
   ), $atts));
-  return '<strong><code>';
+  return '<strong><code class="dobdev_code_inline">';
 }
 add_shortcode('startCode', 'dobson_inline_code_start');
 
@@ -146,5 +146,23 @@ function dobson_inline_code_end($atts) {
   return '</strong></code>';
 }
 add_shortcode('endCode', 'dobson_inline_code_end');
+
+
+/* Adds a shortcode for the start tags for displaying a code block */
+function dobson_code_block_start($atts) {
+  extract(shortcode_atts(array(
+  ), $atts));
+  return '<pre class="dobdev_code_block"><code>';
+}
+add_shortcode('startCodeBlock', 'dobson_code_block_start');
+
+
+/* Adds a shortcode for the end tags for displaying a code block */
+function dobson_code_block_end($atts) {
+  extract(shortcode_atts(array(
+  ), $atts));
+  return '</code></pre>';
+}
+add_shortcode('endCodeBlock', 'dobson_code_block_end');
 
 ?>
