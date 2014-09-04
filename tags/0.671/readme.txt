@@ -1,21 +1,20 @@
-DobsonDev Shortcodes
-====================
+=== DobsonDev Shortcodes ===
+Contributors: DobsonDev
+Donate link: https://dobsondev.com/donate/
+License: GPLv2
+License URI: http://www.gnu.org/licenses/gpl.html
+Tags: dobsondev, shortcodes, pdf, portable document format, github gists, github, gists, twitch streams, twitch, twitch tv, twitch chat, YouTube video, YouTube, inline code, code snippets, code block, programming, code examples
+Requires at least: 2.5
+Tested up to: 4.0
+Stable tag: 0.671
 
-A collection of helpful shortcodes for use with WordPress sites.
+Add a collection of helpful shortcodes to your site.
 
-Copyright 2014  Alex Dobson  (email : [alex@dobsondev.com](mailto:alex@dobsondev.com))
-
-This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License, version 2, as published by the Free Software Foundation.
-
-This program is distributed in the hope that it will be useful,but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
-
-# Description
+== Description ==
 
 A collection of helpful shortcodes that I use in my own work that I wanted to share with the WordPress Community. If you want to suggest any shortcodes please email me at [alex@dobsondev.com](mailto:alex@dobsondev.com).
 
-## Shortcodes Included
+= Shortcodes Included =
 
 * Embed PDFs - Embeds PDFs into pages rather than separate links.
 * Embed [GitHub Gists](http://gist.github.com/) - Easily add GitHub gists to your site or blog.
@@ -51,7 +50,7 @@ This Shortcode will embed a Twitch stream's chat into the page. The username att
 
 **Embed YouTube Video**
 
-[embedYouTube video="video-id" width="###" height="###"]
+[embedYouTube video="video-id" width="###" height="###"\]
 
 This Shortcode will embed a YouTube video into the page. The video attribute is the YouTube video ID of the video you want to embed into the page. It can be found at the end of the URL on YouTube. For example, the video located at [https://www.youtube.com/watch?v=uCdfze1etec](https://www.youtube.com/watch?v=uCdfze1etec) has the video ID "uCdfze1etec". You will always find the video ID after the "watch?v=". The video attribute is required. The width and height attributes will set the size of the embedded video, and both are optional attributes. If they are not entered the width will default to 560 and the height will default to 315.
 
@@ -75,12 +74,12 @@ This shortcode will create the start tags for a code block which will then be en
 
 This shortcode will create the end tags for the code snippet started by [startCode]. If you use these two together you can create small, simple code blocks that have a black background with white text, which is the common convention. This is great for showing Terminal commands or very small code snippets (I recommend using the embed GitHub Gists shortcode for longer code samples).
 
-# Installation
+== Installation ==
 
 1. Upload the entire dobsondev-shortcodes folder to the /wp-content/plugins/ directory.
 1. Activate the plugin through the 'Plugins' menu in WordPress.
 
-# Frequently Asked Questions
+== Frequently Asked Questions ==
 
 For more information about the shortcodes avaliable through the plugin please visit the plugin site. The site contains a description and usage information for each shortcode avaliable through the plugin.
 
@@ -88,27 +87,27 @@ For more information about the shortcodes avaliable through the plugin please vi
 
 If you have any shortcodes you want to suggest or to add to the plugin, please contact me at [alex@dobsondev.com](mailto:alex@dobsondev.com).
 
-# Changelog
+== Changelog ==
 
-## 0.671
+= - 0.671 - =
 
 **New Features**
 
-Added a shortcode for displaying simple code blocks
-Tested up to WordPress 4.0
+* Added a shortcode for displaying simple code blocks
 
 **Bug Fixes**
 
 * Renamed 'youtube-container' CSS class to 'dobdev_youtube_container' in order to ensure uniqueness
 * Added default CSS for the embedded inline code
 
-## 0.670
+= - 0.670 - =
 
 **New Features**
 
+* Tested up to WordPress 4.0
 * Added shortcodes for inline code snippets
 
-## 0.669
+= - 0.669 - =
 
 **New Features**
 
@@ -118,7 +117,7 @@ Tested up to WordPress 4.0
 
 * Made the embedded YouTube videos responsive
 
-## 0.668
+= - 0.668 - =
 
 **New Features**
 
@@ -128,7 +127,7 @@ Tested up to WordPress 4.0
 
 * Added esc_url() to all URL sources for shortcodes
 
-## 0.667
+= - 0.667 - =
 
 **New Features**
 
@@ -143,6 +142,6 @@ Tested up to WordPress 4.0
 
 * Refined method for checking HTTP Headers
 
-## 0.666
+= - 0.666 - =
 
 * Initial Beta Release

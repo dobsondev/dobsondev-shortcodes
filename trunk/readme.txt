@@ -3,9 +3,9 @@ Contributors: DobsonDev
 Donate link: https://dobsondev.com/donate/
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl.html
-Tags: dobsondev, shortcodes, pdf, portable document format, github gists, github, gists, twitch streams, twitch, YouTube video, YouTube
+Tags: dobsondev, shortcodes, pdf, portable document format, github gists, github, gists, twitch streams, twitch, twitch tv, twitch chat, YouTube video, YouTube, inline code, code snippets, code block, programming, code examples
 Requires at least: 2.5
-Tested up to: 3.9.1
+Tested up to: 4.0
 Stable tag: 0.671
 
 Add a collection of helpful shortcodes to your site.
@@ -93,6 +93,7 @@ If you have any shortcodes you want to suggest or to add to the plugin, please c
 
 **New Features**
 
+* Tested up to WordPress 4.0
 * Added a shortcode for displaying simple code blocks
 
 **Bug Fixes**
