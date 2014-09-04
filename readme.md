@@ -94,8 +94,8 @@ If you have any shortcodes you want to suggest or to add to the plugin, please c
 
 **New Features**
 
-Added a shortcode for displaying simple code blocks
-Tested up to WordPress 4.0
+* Added a shortcode for displaying simple code blocks
+* Tested up to WordPress 4.0
 
 **Bug Fixes**
 
