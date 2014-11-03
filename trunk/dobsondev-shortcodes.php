@@ -134,7 +134,7 @@ add_shortcode('embedYouTube', 'dobson_embed_youtube');
 function dobson_inline_code_start($atts) {
   extract(shortcode_atts(array(
   ), $atts));
-  return '<strong><code class="dobdev_code_inline">';
+  return '<code class="dobdev_code_inline"><strong>';
 }
 add_shortcode('startCode', 'dobson_inline_code_start');
 
