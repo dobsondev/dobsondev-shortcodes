@@ -6,7 +6,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 Tags: dobsondev, shortcodes, pdf, portable document format, github gists, github, gists, twitch streams, twitch, twitch tv, twitch chat, YouTube video, YouTube, inline code, code snippets, code block, programming, code examples
 Requires at least: 2.5
 Tested up to: 4.0
-Stable tag: 0.671
+Stable tag: 0.672
 
 Add a collection of helpful shortcodes to your site.
 
