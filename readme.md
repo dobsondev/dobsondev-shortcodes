@@ -90,6 +90,13 @@ If you have any shortcodes you want to suggest or to add to the plugin, please c
 
 # Changelog
 
+## 0.672
+
+**Bug Fixes**
+
+* Fixed a bug that would cause the PDF shortcode to redirect to www.ww.38.yoursite.com/path-to-the-pdf.pdf if the shortcode was copied as [embedPDF source="http://yoursite.com/path-to-the-pdf.pdf" width="###" height="###"]
+* Fixed the same possibly bug mentioned above with the GitHub Gists, Twitch Stream, Twitch Chat and YouTube Video embeds
+
 ## 0.671
 
 **New Features**
