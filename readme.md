@@ -76,7 +76,7 @@ This shortcode will create the start tags for a code block which will then be en
 
 This shortcode will create the end tags for the code snippet started by [startCode]. If you use these two together you can create small, simple code blocks that have a black background with white text, which is the common convention. This is great for showing Terminal commands or very small code snippets (I recommend using the embed GitHub Gists shortcode for longer code samples).
 
-** Buttons **
+**Buttons**
 
 [button text="buttonText" color="color" link="#"]
 
