@@ -25,6 +25,7 @@ A collection of helpful shortcodes that I use in my own work that I wanted to sh
 * Inline Code - Displays inline code snippets that are visually different than the body text.
 * Code Block - Displays a simple code block for simple, small pieces of code.
 * Button - Displays a purely CSS button with choice of color, text and link.
+* User Interaction Messages - Displays a message with appropriate color that you can use to notify users of how their interaction is working.
 
 **Embed PDF**
 
@@ -82,6 +83,15 @@ This shortcode will create the end tags for the code snippet started by [startCo
 
 This shortcode will create a purely CSS button where ever you place it. The text attribute is the text that will appear within the button. The color atrribute defines what color will show - the choices for color are red, blue, green, orange, purple, and turquoise. The link attribute is what link the user wants to redirect to when the button is clicked. If you do not want a redirect on the button click, just use a "#" and the button will do nothing when clicked.
 
+**User Interaction Messages**
+
+[infoMessage text="your-message"]
+[successMessage text="your-message"]
+[warningMessage text="your-message"]
+[errorMessage text="your-message"]
+
+These shortcodes will display a message with an appropriate color that will notify users of how their interaction is working. The color scheme follows that of many other websites - blue is for information, green is for success, yellow is a warning and red signifies an error.
+
 # Installation
 
 1. Upload the entire dobsondev-shortcodes folder to the /wp-content/plugins/ directory.
@@ -96,6 +106,17 @@ For more information about the shortcodes avaliable through the plugin please vi
 If you have any shortcodes you want to suggest or to add to the plugin, please contact me at [alex@dobsondev.com](mailto:alex@dobsondev.com).
 
 # Changelog
+
+## 0.674
+
+**New Features**
+
+* Added shortcodes for displaying user interaction messages
+
+**Bug Fixes**
+
+* Renamed CSS classes to ensure no clashing happens between this plugin and other style sheets
+* Renamed functions to ensure no clashing happens if you use something else I created (I originally just used my last name to start functions, but switch it to be specific for this plugin)
 
 ## 0.673
 
