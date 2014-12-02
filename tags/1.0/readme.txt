@@ -25,7 +25,7 @@ A collection of helpful shortcodes that I use in my own work that I wanted to sh
 * Code Block - Displays a simple code block for simple, small pieces of code.
 * Button - Displays a purely CSS button with choice of color, text and link.
 * User Interaction Messages - Displays a message with appropriate color that you can use to notify users of how their interaction is working.
-* Related Posts - Displays manually entered related posts on your page that cycle through in a little slideshow.
+* Related Posts - Displays manually entered related posts on your post's page that cycle through in a little slideshow. Only for use with posts, NOT pages!
 
 **Embed PDF**
 
@@ -98,6 +98,8 @@ These shortcodes will display a message with an appropriate color that will noti
 eg. [relatedPost post="1; 2; 3; 4"]
 
 This shortcode will create a small slideshow of related posts wherever you put it. Note that you must enter the post ID's yourself, as this shortcode will not automatically index and display related posts for you. Although this is more work it has a significantly smaller load time than plugins which do automatically index them for you. I would recommend this to people who run their own personal blogs with fewer articles. The slideshow is made using only CSS and jQuery.
+
+Please note that this shortcode should only be used on posts, NOT pages. It will cause pages to hang.
 
 == Installation ==
 
