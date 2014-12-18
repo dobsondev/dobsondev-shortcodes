@@ -1,6 +1,7 @@
 = 1.0 =
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 I've decided on an updating scheme that this plugin will now follow. Any change in a #.#.1 increment will denote minor bug fixes. Any change in a #.1.# increment will represent a new shortcode added to the plugin. Finally any change in 1.#.# will donate either a major shortcode being added or this could also go up if enough smaller shortcodes are added to the plugin.
 
 From now on Bug Fixes will all fall under #.# Changlog. However, in brackets will show the exact version number where the bug was fixed. You can see an example below under the "Bug Fixes" heading where some bug fixes are noted as being fixed in the 1.0.1 patch.
@@ -9,10 +10,14 @@ From now on Bug Fixes will all fall under #.# Changlog. However, in brackets wil
 =======
 New Features
 >>>>>>> 1275258d6848b132ee713e142f1d2ace3c4c8502
+=======
+New Features
+>>>>>>> 1275258d6848b132ee713e142f1d2ace3c4c8502
 
 * Full 1.0 Release - I feel there is enough content now to justify it
 * Added shortcode for displaying a related posts slideshow
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 **Bug Fixes**
 
@@ -20,6 +25,8 @@ New Features
 * Changed the default with of the Twitch embed to 100% rather than 620 (1.0.1)
 * Fixed a bug where all related posts would display when the page was loaded (1.0.1)
 
+=======
+>>>>>>> 1275258d6848b132ee713e142f1d2ace3c4c8502
 =======
 >>>>>>> 1275258d6848b132ee713e142f1d2ace3c4c8502
 = 0.674 =

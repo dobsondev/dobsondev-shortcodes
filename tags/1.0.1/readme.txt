@@ -5,7 +5,7 @@ License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl.html
 Tags: dobsondev, shortcodes, pdf, portable document format, github gists, github, gists, twitch streams, twitch, twitch tv, twitch chat, YouTube video, YouTube, inline code, code snippets, code block, programming, code examples, button, buttons, css button, css buttons, button shortcode, buttons shortcodes, user interaction, user interaction messages, info message, information message, success message, warning message, error message, related posts, related posts shortcode, jquery, jquery related posts, related posts slideshow
 Requires at least: 2.5
-Tested up to: 4.0.1
+Tested up to: 4.1
 Stable tag: 1.0.1
 
 Add a collection of helpful shortcodes to your site.
