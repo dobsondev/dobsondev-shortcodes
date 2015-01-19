@@ -3,7 +3,7 @@
  * Plugin Name: DobsonDev Shortcodes
  * Plugin URI: http://dobsondev.com/portfolio/dobsondev-shortcodes/
  * Description: A collection of helpful shortcodes.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Alex Dobson
  * Author URI: http://dobsondev.com/
  * License: GPLv2
