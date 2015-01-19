@@ -279,6 +279,7 @@ add_shortcode('errorMessage', 'dobsondev_shrtcode_error_message');
 function dobsondev_shrtcode_related_posts($atts) {
   extract(shortcode_atts(array(
     'posts' => "",
+    'excerptLength' => 38,
   ), $atts));
   if ($posts == "post-slug") {
     $posts = "";
@@ -291,16 +292,37 @@ function dobsondev_shrtcode_related_posts($atts) {
   $count = 1;
   foreach ( $posts_arr as $post_id ) {
     $output .= '<div class="dobdev-related-posts-post" id="' . $count . '">';
-    $output .= '<a href="' . get_permalink( $post_id ) . '">' . get_the_post_thumbnail( $post_id, array( 130, 130 ), array( 'class' => 'alignleft dobdev-related-posts-thumbnail' ) ) . '</a>';
+    $output .= '<a href="' . get_permalink( $post_id ) . '">' . get_the_post_thumbnail( $post_id, array( 130, 130 ), array( 'class' => 'alignleft dobdev-related-posts-thumbnail' ) );
     $output .= '<h4 class="dobdev-related-posts-title">' . get_post_field( 'post_title', $post_id ) . '</h4>';
-    $output .= '<p class="dobdev-related-posts-excerpt">' . get_the_excerpt( $post_id ) . '</p>';
+    $output .= '<p class="dobdev-related-posts-excerpt">' . get_excerpt_by_id( $post_id, $excerptLength ) . '</p>';
+    $output .= '</a>';
     $output .= '</div><!-- END .dobdev-related-posts-post -->';
     $count ++;
   }
+  $output .= '<br />';
   $output .= '</div><!-- END .dobdev-related-posts -->';
 
   return $output;
 }
 add_shortcode('relatedPosts', 'dobsondev_shrtcode_related_posts');
+
+/*
+  Utility function to get the post by ID for the dobsondev_shrtcode_related_posts function
+  http://wordpress.stackexchange.com/questions/26729/get-excerpt-using-get-the-excerpt-outside-a-loop
+*/
+function get_excerpt_by_id($post_id, $excerpt_length){
+  $the_post = get_post($post_id);                            // Gets post ID
+  $the_excerpt = $the_post->post_content;                    // Gets post_content to be used as a basis for the excerpt
+  $the_excerpt = strip_tags(strip_shortcodes($the_excerpt)); // Strips tags and images
+  $words = explode(' ', $the_excerpt, $excerpt_length + 1);
+
+  if(count($words) > $excerpt_length) :
+      array_pop($words);
+      array_push($words, '…');
+      $the_excerpt = implode(' ', $words);
+  endif;
+
+  return $the_excerpt;
+}
 
 ?>

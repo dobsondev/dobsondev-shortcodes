@@ -1,0 +1,92 @@
+= 1.0 =
+
+I've decided on an updating scheme that this plugin will now follow. Any change in a #.#.1 increment will denote minor bug fixes. Any change in a #.1.# increment will represent a new shortcode added to the plugin. Finally any change in 1.#.# will donate either a major shortcode being added or this could also go up if enough smaller shortcodes are added to the plugin.
+
+From now on Bug Fixes will all fall under #.# Changlog. However, in brackets will show the exact version number where the bug was fixed. You can see an example below under the "Bug Fixes" heading where some bug fixes are noted as being fixed in the 1.0.1 patch.
+
+**New Features**
+
+* Full 1.0 Release - I feel there is enough content now to justify it
+* Added shortcode for displaying a related posts slideshow
+
+**Bug Fixes**
+
+* Created CSS wrapper classes for the Twitch, Twitch Chat, and PDF embeds (1.0.1)
+* Changed the default with of the Twitch embed to 100% rather than 620 (1.0.1)
+* Fixed a bug where all related posts would display when the page was loaded (1.0.1)
+
+= 0.674 =
+
+New Features
+
+* Added shortcodes for displaying user interaction messages
+
+Bug Fixes
+
+* Renamed CSS classes to ensure no clashing happens between this plugin and other style sheets
+* Renamed functions to ensure no clashing happens if you use something else I created (I originally just used my last name to start functions, but switch it to be specific for this plugin)
+
+= 0.673 =
+
+New Features
+
+* Added a shortcode for displaying CSS buttons
+
+= 0.672 =
+
+Bug Fixes
+
+* Fixed a bug that would cause the PDF shortcode to redirect to www.ww.38.yoursite.com/path-to-the-pdf.pdf if the shortcode was copied as [embedPDF source="http://yoursite.com/path-to-the-pdf.pdf" width="###" height="###"]
+* Fixed the same possibly bug mentioned above with the GitHub Gists, Twitch Stream, Twitch Chat and YouTube Video embeds
+
+= 0.671 =
+
+New Features
+
+* Added a shortcode for displaying simple code blocks
+
+Bug Fixes
+
+* Renamed 'youtube-container' CSS class to 'dobdev_youtube_container' in order to ensure uniqueness
+* Added default CSS for the embedded inline code
+
+= 0.670 =
+
+New Features
+
+* Added shortcodes for inline code snippets
+
+= 0.669 =
+
+New Features
+
+* Added a Stylesheet for the plugin
+
+Bug Fixes
+
+* Made the embedded YouTube videos responsive
+
+= 0.668 =
+
+New Features
+* Added a Shortcode for embedding Twitch.tv stream chats on your site
+* Added a Stylesheet for the plugin
+
+Bug Fixes
+* Made the embedded YouTube videos responsive
+
+= 0.667 =
+
+New Features
+* Added a Shortcode for embedding Twitch.tv streams on your site
+* Added a Shortcode for embedding YouTube videos on your site
+
+Changes
+* GitHub Gist Shortcode changed from \[github_gist source=""\] to \[embedGist source=""\]
+
+Bug Fixes
+* Refined method for checking HTTP Headers
+
+= 0.666 =
+
+* Initial Beta Release

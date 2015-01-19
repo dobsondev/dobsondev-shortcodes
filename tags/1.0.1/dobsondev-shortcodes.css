@@ -131,3 +131,6 @@ div.dobdev-error-msg {
 div.dobdev-related-posts-post {
   display: none;
 }
+div.dobdev-related-posts-post a {
+  text-decoration: none;
+}
