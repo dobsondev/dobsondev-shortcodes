@@ -19,6 +19,7 @@ A collection of helpful shortcodes that I use in my own work that I wanted to sh
 
 * Embed PDFs - Embeds PDFs into pages rather than separate links.
 * Embed [GitHub Gists](http://gist.github.com/) - Easily add GitHub gists to your site or blog.
+* Embed [GitHub Repo Readme](http://github.com/) - Easily add the content from your GitHub Repo README.md file.
 * Embed [Twitch Stream](http://twitch.tv/) - Embeds a Twitch Stream into the page.
 * Embed [Twitch Stream](http://twitch.tv/) Chat - Embeds the chat from a Twitch Stream into the page.
 * Embed [YouTube Video](http://youtube.com/) - Embeds a YouTube Video into the page.
@@ -43,6 +44,14 @@ Please note that setting the width to "auto" will not work. Rather, please set t
 This Shortcode will embed a GitHub Gist into the page. The Gist will be embedded in a little box that makes it easy to share code samples with other developers (or whoever you want to share them with). The source attribute is the URL to the Gist and is required.
 
 If you are looking to add some custom CSS to the Gists, they are automatically put into "div.gist" by GitHub. Use that class when doing any CSS changes. This should only be done by someone experienced using CSS, otherwise the results could cause harm to the layout of your site.
+
+**Embed GitHub Repo Readme**
+
+[embedGitHubReadme owner="RepoOwner" repo="RepoName"]
+
+This shortcode will display the contents of your GitHub Repository's README file. The markdown will displayed as HTML output onto the page. This shortcode uses GitHub API calls to ensure that as you update you README file the output from this shortcode will also update.
+
+The style will match that of your default page style, but if you want to change the style just wrap the shortcode inside of a div and then edit as much as the style as you want.
 
 **Embed Twitch Stream**
 
@@ -129,6 +138,19 @@ For more information about the shortcodes avaliable through the plugin please vi
 If you have any shortcodes you want to suggest or to add to the plugin, please contact me at [alex@dobsondev.com](mailto:alex@dobsondev.com).
 
 # Changelog
+
+## 1.1.0
+
+The Markdown Parser used for the GitHub Repository Readme shortcode is [Parsedown](http://parsedown.org/).
+
+**New Features**
+
+* Added shortcode for displaying GitHub Repository README.md files
+
+**Bug Fixes**
+
+* Added some documentation that was missing
+* Added the tags for tested up to 4.1.1
 
 ## 1.0
 
