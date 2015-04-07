@@ -12,7 +12,7 @@ Add a collection of helpful shortcodes to your site.
 
 == Description ==
 
-A collection of helpful shortcodes that I use in my own work that I wanted to share with the WordPress Community. If you want to suggest any shortcodes please email me at [alex@dobsondev.com](mailto:alex@dobsondev.com).
+A collection of helpful shortcodes that I use in my own work that I wanted to share with the WordPress Community. If you want to suggest any shortcodes please email me at [alex@dobsondev.com](mailto:alex@dobsondev.com). Please download from the [Offical WordPress Repository](https://wordpress.org/plugins/dobsondev-shortcodes/) for easiest installation. If you would like to donate please [click here](http://dobsondev.com/donate/).
 
 = Shortcodes Included =
 
