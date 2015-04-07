@@ -1,7 +1,7 @@
 DobsonDev Shortcodes
 ====================
 
-A collection of helpful shortcodes for use with WordPress sites.
+A collection of helpful shortcodes for use with WordPress sites. Please download from the [Offical WordPress Repository](https://wordpress.org/plugins/dobsondev-shortcodes/) for easiest installation. If you would like to donate please [click here](http://dobsondev.com/donate/).
 
 Copyright 2014  Alex Dobson  (email : [alex@dobsondev.com](mailto:alex@dobsondev.com))
 
