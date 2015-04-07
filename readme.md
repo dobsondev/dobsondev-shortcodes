@@ -20,6 +20,7 @@ A collection of helpful shortcodes that I use in my own work that I wanted to sh
 * Embed PDFs - Embeds PDFs into pages rather than separate links.
 * Embed [GitHub Gists](http://gist.github.com/) - Easily add GitHub gists to your site or blog.
 * Embed [GitHub Repo Readme](http://github.com/) - Easily add the content from your GitHub Repo README.md file.
+* Embed [GitHub Repo File Contents](http://github.com/) - Easily add the content from a file from any GitHub repository.
 * Embed [Twitch Stream](http://twitch.tv/) - Embeds a Twitch Stream into the page.
 * Embed [Twitch Stream](http://twitch.tv/) Chat - Embeds the chat from a Twitch Stream into the page.
 * Embed [YouTube Video](http://youtube.com/) - Embeds a YouTube Video into the page.
@@ -52,6 +53,12 @@ If you are looking to add some custom CSS to the Gists, they are automatically p
 This shortcode will display the contents of your GitHub Repository's README file. The markdown will displayed as HTML output onto the page. This shortcode uses GitHub API calls to ensure that as you update you README file the output from this shortcode will also update.
 
 The style will match that of your default page style, but if you want to change the style just wrap the shortcode inside of a div and then edit as much as the style as you want.
+
+**Embed GitHub Repo File Contents**
+
+[embedGitHubContent owner="Owner_of_Repo" repo="Repo_Name" path="Path_to_File" markdown="Yes/No"]
+
+This shortcode will display the contents of a file from any GitHub repository. You must include the Owner of the repository, the repository name and the path to the file. Optionally, if the file is a markdown file you can put markdown="yes" and the plugin will output the markdown as HTML onto the page. If you give the shortcode a path to a folder rather than to a file it will output an array of the folders contents.
 
 **Embed Twitch Stream**
 
@@ -138,6 +145,16 @@ For more information about the shortcodes avaliable through the plugin please vi
 If you have any shortcodes you want to suggest or to add to the plugin, please contact me at [alex@dobsondev.com](mailto:alex@dobsondev.com).
 
 # Changelog
+
+## 1.1.1
+
+**New Features**
+
+* Added shortcode for displaying GitHub repository file contents.
+
+**Bug Fixes**
+
+* Changed some documentation errors.
 
 ## 1.1.0
 
