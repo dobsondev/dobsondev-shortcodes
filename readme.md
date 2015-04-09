@@ -146,15 +146,19 @@ If you have any shortcodes you want to suggest or to add to the plugin, please c
 
 # Changelog
 
-## 1.1.1
+## 1.1
 
 **New Features**
 
-* Added shortcode for displaying GitHub repository file contents.
+* Added shortcode for displaying GitHub repository README.md files (1.1.0)
+* Added shortcode for displaying GitHub repository file contents (1.1.1)
 
 **Bug Fixes**
 
-* Changed some documentation errors.
+* Added some documentation that was missing (1.1.0)
+* Added the tags for tested up to WordPress 4.1.1 (1.1.0)
+* Changed some documentation errors (1.1.1)
+* Fixed a return error in the GitHub README and GitHub File Contents shortcodes (1.1.2)
 
 ## 1.1.0
 
