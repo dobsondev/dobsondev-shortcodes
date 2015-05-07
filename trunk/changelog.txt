@@ -4,6 +4,7 @@ New Features
 
 * Added shortcode for displaying GitHub repository README.md files (1.1.0)
 * Added shortcode for displaying GitHub repository file contents (1.1.1)
+* Added Transient Cache support for the GitHub README and File shortcodes (1.1.3)
 
 Bug Fixes
 
@@ -11,6 +12,8 @@ Bug Fixes
 * Added the tags for tested up to WordPress 4.1.1 (1.1.0)
 * Changed some documentation errors (1.1.1)
 * Fixed a return error in the GitHub README and GitHub File Contents shortcodes (1.1.2)
+* Minified the CSS and JS scripts (1.1.3)
+
 
 = 1.0 =
 
