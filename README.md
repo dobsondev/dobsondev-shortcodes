@@ -165,6 +165,7 @@ If you have any shortcodes you want to suggest or to add to the plugin, please c
 * Changed some documentation errors (1.1.1)
 * Fixed a return error in the GitHub README and GitHub File Contents shortcodes (1.1.2)
 * Minified the CSS and JS scripts (1.1.3)
+* Fixed a naming error for the WordPress transients used in the GitHub README and File shortcodes (1.1.4)
 
 ## 1.1.0
 
