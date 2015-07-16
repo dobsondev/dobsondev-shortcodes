@@ -1,0 +1,1 @@
+jQuery(document).ready(function(n){function e(t){var s=n(".dobdev-related-posts-post"),d=t;d>=s.length&&(d=0);var o=s.eq(d);o.fadeIn(300,function(){n(this).css("display","block")}).delay(2500),o.fadeOut(100,function(){n(this).css("display","none"),e(d+1)})}e(0)});
