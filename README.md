@@ -167,6 +167,7 @@ If you have any shortcodes you want to suggest or to add to the plugin, please c
 * Minified the CSS and JS scripts (1.1.3)
 * Fixed a naming error for the WordPress transients used in the GitHub README and File shortcodes (1.1.4)
 * Fixed a bug where GitHub file contents wouldn't display line breaks properly if they were not a markdown file - thanks to [Stephanie Locke](https://github.com/stephlocke) for catching this and letting me know (1.1.5)
+* Fixed a bug where the Related Posts Shortcode would brick the page it was loading on (1.1.6)
 
 ## 1.1.0
 
