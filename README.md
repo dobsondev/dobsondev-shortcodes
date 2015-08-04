@@ -160,6 +160,7 @@ If you have any shortcodes you want to suggest or to add to the plugin, please c
 
 **Bug Fixes**
 
+* Added the tags for tested up to WordPress 4.2.4 (1.1.7)
 * Added some documentation that was missing (1.1.0)
 * Added the tags for tested up to WordPress 4.1.1 (1.1.0)
 * Changed some documentation errors (1.1.1)
