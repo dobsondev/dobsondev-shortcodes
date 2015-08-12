@@ -154,21 +154,22 @@ If you have any shortcodes you want to suggest or to add to the plugin, please c
 
 **New Features**
 
-* Added shortcode for displaying GitHub repository README.md files (1.1.0)
-* Added shortcode for displaying GitHub repository file contents (1.1.1)
 * Added Transient Cache support for the GitHub README and File shortcodes (1.1.3)
+* Added shortcode for displaying GitHub repository file contents (1.1.1)
+* Added shortcode for displaying GitHub repository README.md files (1.1.0)
 
 **Bug Fixes**
 
+* Tested up to WordPress 4.3 (1.1.8)
 * Added the tags for tested up to WordPress 4.2.4 (1.1.7)
+* Fixed where the Related Posts Shortcode would brick the page it was loading on (1.1.6)
+* Fixed a bug where GitHub file contents wouldn't display line breaks properly if they were not a markdown file - thanks to [Stephanie Locke](https://github.com/stephlocke) for catching this and letting me know (1.1.5)
+* Fixed a naming error for the WordPress transients used in the GitHub README and File shortcodes (1.1.4)
+* Minified the CSS and JS scripts (1.1.3)
+* Fixed a return error in the GitHub README and GitHub File Contents shortcodes (1.1.2)
+* Changed some documentation errors (1.1.1)
 * Added some documentation that was missing (1.1.0)
 * Added the tags for tested up to WordPress 4.1.1 (1.1.0)
-* Changed some documentation errors (1.1.1)
-* Fixed a return error in the GitHub README and GitHub File Contents shortcodes (1.1.2)
-* Minified the CSS and JS scripts (1.1.3)
-* Fixed a naming error for the WordPress transients used in the GitHub README and File shortcodes (1.1.4)
-* Fixed a bug where GitHub file contents wouldn't display line breaks properly if they were not a markdown file - thanks to [Stephanie Locke](https://github.com/stephlocke) for catching this and letting me know (1.1.5)
-* Fixed a bug where the Related Posts Shortcode would brick the page it was loading on (1.1.6)
 
 ## 1.1.0
 
