@@ -55,6 +55,8 @@ The style will match that of your default page style, but if you want to change 
 
 If you want to take advantage of WordPress' transient API for caching, simply enter an ID for the cache_id argument. Note that this ID can be anything other than "NULL", it doesn't necessarily have to be a number. Once entered this will cause the shortcode to cache the results of the API call for 24 hours. This means the shortcode will use those cached results and speed up the load times for 24 hours, at which point it will then call the API again to get any updates and use those cached results for another 24 hours.
 
+If you're receiving an error similar to "SSL certificate : unable to get local issuer certificate" then please add the attribute insecure="true" to your shortcode. This stops cURL from verifying the peer's certificate which may be required in some cases depending on your server. If you would rather you can instead sdd the root CA (the CA signing the server certificate) to etc/ssl/certs/ca-certificates.crt which will allow secure connections to work. By default the shortcode will use secure connections.
+
 **Embed GitHub Repo File Contents**
 
 [embedGitHubContent owner="Owner_of_Repo" repo="Repo_Name" path="Path_to_File" markdown="Yes/No"  cache_id="id"]
@@ -62,6 +64,8 @@ If you want to take advantage of WordPress' transient API for caching, simply en
 This shortcode will display the contents of a file from any GitHub repository. You must include the Owner of the repository, the repository name and the path to the file. Optionally, if the file is a markdown file you can put markdown="yes" and the plugin will output the markdown as HTML onto the page. If you give the shortcode a path to a folder rather than to a file it will output an array of the folders contents.
 
 If you want to take advantage of WordPress' transient API for caching, simply enter an ID for the cache_id argument. Note that this ID can be anything other than "NULL", it doesn't necessarily have to be a number. Once entered this will cause the shortcode to cache the results of the API call for 24 hours. This means the shortcode will use those cached results and speed up the load times for 24 hours, at which point it will then call the API again to get any updates and use those cached results for another 24 hours.
+
+If you're receiving an error similar to "SSL certificate : unable to get local issuer certificate" then please add the attribute insecure="true" to your shortcode. This stops cURL from verifying the peer's certificate which may be required in some cases depending on your server. If you would rather you can instead sdd the root CA (the CA signing the server certificate) to etc/ssl/certs/ca-certificates.crt which will allow secure connections to work. By default the shortcode will use secure connections.
 
 **Embed Twitch Stream**
 

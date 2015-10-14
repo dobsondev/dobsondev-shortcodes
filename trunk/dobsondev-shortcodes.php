@@ -96,6 +96,7 @@ function dobsondev_shrtcode_create_github_readme($atts) {
     'owner' => "NULL",
     'repo' => "NULL",
     'cache_id' => "NULL",
+    'insecure' => "NULL",
   ), $atts));
   if ($owner == "NULL" || $repo == "NULL") {
     return '<p> Please Enter a Owner and Repo for the embedGitHubReadme ShortCode. </p>';
@@ -104,17 +105,30 @@ function dobsondev_shrtcode_create_github_readme($atts) {
     if ( false === ( $readme_transient = get_transient( 'ddghr-' . md5( $owner . $repo . $cache_id ) ) ) ) {
       // we do not have a transient stored so we have to make the API call
       $curl = curl_init();
-      curl_setopt_array($curl, array(
-        CURLOPT_RETURNTRANSFER => 1,
-        CURLOPT_URL => 'https://api.github.com/repos/' . $owner . '/' . $repo . '/readme',
-        CURLOPT_USERAGENT => $repo,
-        CURLOPT_HEADER => false
-      ));
+      if ( $insecure == "true" || $insecure == "TRUE" || $insecure == "yes" || $insecure == "YES" ) {
+        // we have an insecure connection so we have to let cURL know that
+        curl_setopt_array($curl, array(
+          CURLOPT_RETURNTRANSFER => 1,
+          CURLOPT_URL => 'https://api.github.com/repos/' . $owner . '/' . $repo . '/readme',
+          CURLOPT_USERAGENT => $repo,
+          CURLOPT_HEADER => false,
+          CURLOPT_SSL_VERIFYPEER => false
+        ));
+      } else {
+        // we are using the regular secure connection
+        curl_setopt_array($curl, array(
+          CURLOPT_RETURNTRANSFER => 1,
+          CURLOPT_URL => 'https://api.github.com/repos/' . $owner . '/' . $repo . '/readme',
+          CURLOPT_USERAGENT => $repo,
+          CURLOPT_HEADER => false
+        ));
+      }
       $response = curl_exec($curl);
       // var_dump($response);
       if ( FALSE === $response ) {
-        $output_error = 'cURL ERROR: ' . curl_error($curl) . curl_errno($curl) . '<br />';
-        $output_error .= 'If your error reads something like "SSL certificate problem: unable to get local issuer certificate" then please add the insecure="true" attribute to your shortcode.';
+        $output_error = '<strong>cURL ERROR</strong>: <span style="color: red">' . curl_error($curl) . '</span><br />';
+        $output_error .= '<strong>Error #</strong>: <span style="color: red">' . curl_errno($curl) . '</span><br /><br />';
+        $output_error .= 'If your error reads something like "SSL certificate problem: unable to get local issuer certificate" then please add the <strong>insecure="true"</strong> attribute to your shortcode.';
         return $output_error;
       }
       $response_array = json_decode($response);
@@ -142,6 +156,7 @@ function dobsondev_shrtcode_create_github_file_contents($atts) {
     'path' => "NULL",
     'markdown' => "no",
     'cache_id' => "NULL",
+    'insecure' => "NULL",
   ), $atts));
   if ($owner == "NULL" || $repo == "NULL" || $path == "NULL") {
     return '<p> Please Enter a Owner, Repo and Path for the embedGitHubReadme ShortCode. </p>';
@@ -150,17 +165,30 @@ function dobsondev_shrtcode_create_github_file_contents($atts) {
     if ( false === ( $githubfile_transient = get_transient( 'ddghf-' . md5( $owner . $repo . $path . $cache_id ) ) ) ) {
       // we do not have a transient stored so we have to make the API call
       $curl = curl_init();
-      curl_setopt_array($curl, array(
-        CURLOPT_RETURNTRANSFER => 1,
-        CURLOPT_URL => 'https://api.github.com/repos/' . $owner . '/' . $repo . '/contents/' . $path,
-        CURLOPT_USERAGENT => $repo,
-        CURLOPT_HEADER => false
-      ));
+      if ( $insecure == "true" || $insecure == "TRUE" || $insecure == "yes" || $insecure == "YES" ) {
+        // we have an insecure connection so we have to let cURL know that
+        curl_setopt_array($curl, array(
+          CURLOPT_RETURNTRANSFER => 1,
+          CURLOPT_URL => 'https://api.github.com/repos/' . $owner . '/' . $repo . '/readme',
+          CURLOPT_USERAGENT => $repo,
+          CURLOPT_HEADER => false,
+          CURLOPT_SSL_VERIFYPEER => false
+        ));
+      } else {
+        // we are using the regular secure connection
+        curl_setopt_array($curl, array(
+          CURLOPT_RETURNTRANSFER => 1,
+          CURLOPT_URL => 'https://api.github.com/repos/' . $owner . '/' . $repo . '/readme',
+          CURLOPT_USERAGENT => $repo,
+          CURLOPT_HEADER => false
+        ));
+      }
       $response = curl_exec($curl);
       // var_dump($response);
       if ( FALSE === $response ) {
-        $output_error = 'cURL ERROR: ' . curl_error($curl) . curl_errno($curl) . '<br />';
-        $output_error .= 'If your error reads something like "SSL certificate problem: unable to get local issuer certificate" then please add the insecure="true" attribute to your shortcode.';
+        $output_error = '<strong>cURL ERROR</strong>: <span style="color: red">' . curl_error($curl) . '</span><br />';
+        $output_error .= '<strong>Error #</strong>: <span style="color: red">' . curl_errno($curl) . '</span><br /><br />';
+        $output_error .= 'If your error reads something like "SSL certificate problem: unable to get local issuer certificate" then please add the <strong>insecure="true"</strong> attribute to your shortcode.';
         return $output_error;
       }
       $response_array = json_decode($response);
