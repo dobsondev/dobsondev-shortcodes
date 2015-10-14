@@ -3,7 +3,7 @@
  * Plugin Name: DobsonDev Shortcodes
  * Plugin URI: http://dobsondev.com/portfolio/dobsondev-shortcodes/
  * Description: A collection of helpful shortcodes.
- * Version: 1.1.8
+ * Version: 1.1.9
  * Author: Alex Dobson
  * Author URI: http://dobsondev.com/
  * License: GPLv2
@@ -112,6 +112,11 @@ function dobsondev_shrtcode_create_github_readme($atts) {
       ));
       $response = curl_exec($curl);
       // var_dump($response);
+      if ( FALSE === $response ) {
+        $output_error = 'cURL ERROR: ' . curl_error($curl) . curl_errno($curl) . '<br />';
+        $output_error .= 'If your error reads something like "SSL certificate problem: unable to get local issuer certificate" then please add the insecure="true" attribute to your shortcode.';
+        return $output_error;
+      }
       $response_array = json_decode($response);
       // var_dump($response_array);
       $parsedown = new Parsedown();
@@ -153,6 +158,11 @@ function dobsondev_shrtcode_create_github_file_contents($atts) {
       ));
       $response = curl_exec($curl);
       // var_dump($response);
+      if ( FALSE === $response ) {
+        $output_error = 'cURL ERROR: ' . curl_error($curl) . curl_errno($curl) . '<br />';
+        $output_error .= 'If your error reads something like "SSL certificate problem: unable to get local issuer certificate" then please add the insecure="true" attribute to your shortcode.';
+        return $output_error;
+      }
       $response_array = json_decode($response);
       // var_dump($response_array);
       if (strcasecmp($markdown, "yes") == 0) {

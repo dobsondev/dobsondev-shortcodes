@@ -6,7 +6,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 Tags: dobsondev, shortcodes, pdf, portable document format, github gists, github, gists, github readme, github project readme, github repo readme, github file contents, twitch streams, twitch, twitch tv, twitch chat, YouTube video, YouTube, inline code, code snippets, code block, programming, code examples, button, buttons, css button, css buttons, button shortcode, buttons shortcodes, user interaction, user interaction messages, info message, information message, success message, warning message, error message, related posts, related posts shortcode, jquery, jquery related posts, related posts slideshow
 Requires at least: 2.5
 Tested up to: 4.3
-Stable tag: 1.1.8
+Stable tag: 1.1.9
 
 Add a collection of helpful shortcodes to your site.
 
@@ -160,6 +160,8 @@ New Features
 
 Bug Fixes
 
+* Found a bug where the GitHub Readme and GitHub File Contents shortcodes would not return anything because cURL was unable to verify the certificate provided by the server. This can now be avoided using the insecure="true" attribute on the shortcode. Thanks to [JacobD10](https://profiles.wordpress.org/jacobd10/) for finding the error. (1.1.9)
+* More substantial error handling has been added to both the GitHub Readme and GitHub File Contents shortcodes which should help users identify what kind of cURL error they are getting. (1.1.9)
 * Tested up to WordPress 4.3 (1.1.8)
 * Added the tags for tested up to WordPress 4.2.4 (1.1.7)
 * Fixed where the Related Posts Shortcode would brick the page it was loading on (1.1.6)
