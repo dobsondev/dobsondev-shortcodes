@@ -164,7 +164,8 @@ If you have any shortcodes you want to suggest or to add to the plugin, please c
 
 **Bug Fixes**
 
-* Found a bug where the GitHub Readme and GitHub File Contents shortcodes would not return anything because cURL was unable to verify the certificate provided by the server. This can now be avoided using the insecure="true" attribute on the shortcode. Thanks to [JacobD10](https://profiles.wordpress.org/jacobd10/) for finding the error. (1.1.9)
+* Fixed a bug where the GitHub File Contents shortcode didn't work. When changing from version 1.1.8 to 1.1.9 the API call was mistakenly switched to the README file but this has now been fixed. Thanks to [Igor Pečovnik](https://github.com/igorpecovnik) for finding the error and letting me know. (1.1.10)
+* Fixed a bug where the GitHub Readme and GitHub File Contents shortcodes would not return anything because cURL was unable to verify the certificate provided by the server. This can now be avoided using the insecure="true" attribute on the shortcode. Thanks to [JacobD10](https://profiles.wordpress.org/jacobd10/) for finding the error. (1.1.9)
 * More substantial error handling has been added to both the GitHub Readme and GitHub File Contents shortcodes which should help users identify what kind of cURL error they are getting. (1.1.9)
 * Tested up to WordPress 4.3 (1.1.8)
 * Added the tags for tested up to WordPress 4.2.4 (1.1.7)
