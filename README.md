@@ -15,6 +15,8 @@ You should have received a copy of the GNU General Public License along with thi
 
 A collection of helpful shortcodes that I use in my own work that I wanted to share with the WordPress Community. If you want to suggest any shortcodes please email me at [alex@dobsondev.com](mailto:alex@dobsondev.com).
 
+As of version 2.0.0 DobsonDev Shortcodes includes a TinyMCE Plugin that provides a button and user interface for adding the shortcodes. The button is the DobsonDev Shortcodes logo and if you click on it you will see a dropdown menu with all of the different shortcodes available to you. Click on the shortcode you want and a popup will appear (for the most part - three of the shortcodes just appear in the editor and you can fill their content in) containing the different attributes for that shortcode. The required attributes are marked with stars and you must fill them in. The other optional attributes can either be filled in to include them or left blank to leave them out.
+
 ## Shortcodes Included
 
 * Embed PDFs - Embeds PDFs into pages rather than separate links.
@@ -153,6 +155,18 @@ For more information about the shortcodes avaliable through the plugin please vi
 If you have any shortcodes you want to suggest or to add to the plugin, please contact me at [alex@dobsondev.com](mailto:alex@dobsondev.com).
 
 # Changelog
+
+## 2.0
+
+**New Features**
+
+* Added a TinyMCE Plugin that provides a user interface for the shortcodes. Click on the DobsonDev Shortcodes button in the TinyMCE editor will produce a dropdown with all of the available shortcodes you can use, simply click on the shortcode you want and a popup with the available attributes will appear. Fill them out and the shortcode will appear in the editor completed. (2.0.0)
+* Updated Font Awesome to 4.4.0 (2.0.0)
+
+**Bug Fixes**
+
+* Tested up to WordPress 4.4 (2.0.0)
+* Fixed a bug where not all of the CSS and JavaScript files were minified (2.0.0)
 
 ## 1.1
 
