@@ -160,11 +160,13 @@ If you have any shortcodes you want to suggest or to add to the plugin, please c
 
 **New Features**
 
+* Added a shortcode (divClear) that provides a <div> with clear: both; (2.0.1)
 * Added a TinyMCE Plugin that provides a user interface for the shortcodes. Click on the DobsonDev Shortcodes button in the TinyMCE editor will produce a dropdown with all of the available shortcodes you can use, simply click on the shortcode you want and a popup with the available attributes will appear. Fill them out and the shortcode will appear in the editor completed. (2.0.0)
 * Updated Font Awesome to 4.4.0 (2.0.0)
 
 **Bug Fixes**
 
+* Fixed a bug where other Font Awesome usages could be affected by this plugin's CSS (2.0.1)
 * Tested up to WordPress 4.4 (2.0.0)
 * Fixed a bug where not all of the CSS and JavaScript files were minified (2.0.0)
 
