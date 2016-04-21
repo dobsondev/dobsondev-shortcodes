@@ -362,6 +362,78 @@ function dobsondev_shrtcode_kodi_addon_download($atts) {
 add_shortcode('embedKodiAddonDownload', 'dobsondev_shrtcode_kodi_addon_download');  
 
 
+/* Adds a shortcode for displaying kodi addon info table onto a page */
+function dobsondev_shrtcode_kodi_addon_info($atts) {
+  extract(shortcode_atts(array(
+        'addonid' => "NULL",
+        'addonxmlurl' => "NULL"
+  ), $atts));
+  if ($addonid == "NULL" || $addonxmlurl == "NULL") {
+    return '<p> Please Enter a AddonID and the path to the repos addon.xml. </p>';
+  } else {
+    $curl = curl_init();
+        curl_setopt_array($curl, array(
+          CURLOPT_RETURNTRANSFER => 1,
+          CURLOPT_URL => $addonxmlurl,
+          CURLOPT_USERAGENT => 'Repo Info Grabber 1.0',
+          CURLOPT_HEADER => false,
+          CURLOPT_SSL_VERIFYPEER => false
+        ));
+    $response = curl_exec($curl);
+    // var_dump($response);
+    if ( FALSE === $response ) {
+      $output_error = '<strong>cURL ERROR</strong>: <span style="color: red">' . curl_error($curl) . '</span><br />';
+      $output_error .= '<strong>Error #</strong>: <span style="color: red">' . curl_errno($curl) . '</span><br /><br />';
+      $output_error .= 'If your error reads something like "SSL certificate problem: unable to get local issuer certificate" then please add the <strong>insecure="true"</strong> attribute to your shortcode.';
+      return $output_error;
+    }
+
+
+    $repo_addonxml = new SimpleXMLElement($response);
+    $repobaseurl = str_replace("addons.xml","",$addonxmlurl);
+    foreach ($repo_addonxml->addon as $addon) {
+      if ( $addon['id'] == $addonid ) {
+        $fileurl = $repobaseurl.$addon['id']."/".$addon['id']."-".$addon['version'].".zip";
+        $icon = $repobaseurl.$addon['id']."/icon.png";
+        $outtxt = '<table style="height: 10px; width: 491.25px;">'.
+                  '<tbody>'.
+                  '<tr>'.
+                  '<td style="width: 176px; text-align: justify;"><img id="__wp-temp-img-id" class="aligncenter" title="" src="'.$iconurl.'" alt="" width="130" height="130" /></td>'.
+                  '<td style="width: 296.25px;">'.
+                  '<table style="height: 182px; width: 300.117px;">'.
+                  '<tbody>'.
+                  '<tr>'.
+                  '<td style="width: 116px;">Addon:</td>'.
+                  '<td style="width: 168.117px;">'.$addon['name'].'</td>'.
+                  '</tr>'.
+                  '<tr>'.
+                  '<td style="width: 116px;">Version:</td>'.
+                  '<td style="width: 168.117px;">'.$addon['version'].'</td>'.
+                  '</tr>'.
+                  '<tr>'.
+                  '<td style="width: 116px;">Ersteller:</td>'.
+                  '<td style="width: 168.117px;">'.$addon['provider-name'].'</td>'.
+                  '</tr>'.
+                  '<tr>'.
+                  '<td style="width: 116px;">Download:</td>'.
+                  '<td style="width: 168.117px;"><a href="'.$fileurl.'">'.$addon['id'].'-'.$addon['version'].'.zip</a></td>'.
+                  '</tr>'.
+                  '</tbody>'.
+                  '</table>'.
+                  '</td>'.
+                  '</tr>'.
+                  '</tbody>'.
+                  '</table>';
+
+      }
+    }
+    return $outtxt;
+  }
+}
+add_shortcode('embedKodiAddonInfo', 'dobsondev_shrtcode_kodi_addon_info');
+
+
+
 /* Adds a shortcode for start tags for displaying inline code */
 function dobsondev_shrtcode_inline_code_start($atts) {
   extract(shortcode_atts(array(
