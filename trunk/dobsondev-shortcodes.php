@@ -395,10 +395,10 @@ function dobsondev_shrtcode_kodi_addon_info($atts) {
       if ( $addon['id'] == $addonid ) {
         $fileurl = $repobaseurl.$addon['id']."/".$addon['id']."-".$addon['version'].".zip";
         $icon = $repobaseurl.$addon['id']."/icon.png";
-        $outtxt = '<table style="height: 10px; width: 491.25px;">'.
+        $outtxt = '<table style="height: 10px; width: 501.25px;">'.
                   '<tbody>'.
                   '<tr>'.
-                  '<td style="width: 176px; text-align: justify; vertical-align: text-top;"><img id="__wp-temp-img-id" class="aligncenter" title="" src="'.$icon.'" alt="" width="150" height="150" /></td>'.
+                  '<td style="width: 186px; text-align: justify; vertical-align: text-top;"><img id="__wp-temp-img-id" class="aligncenter" title="" src="'.$icon.'" alt="" width="176" height="176" /></td>'.
                   '<td style="width: 296.25px;">'.
                   '<table style="height: 182px; width: 300.117px;">'.
                   '<tbody>'.
