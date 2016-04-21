@@ -398,7 +398,7 @@ function dobsondev_shrtcode_kodi_addon_info($atts) {
         $outtxt = '<table style="height: 10px; width: 491.25px;">'.
                   '<tbody>'.
                   '<tr>'.
-                  '<td style="width: 176px; text-align: justify;"><img id="__wp-temp-img-id" class="aligncenter" title="" src="'.$icon.'" alt="" width="130" height="130" /></td>'.
+                  '<td style="width: 176px; text-align: justify; vertical-align: text-top;"><img id="__wp-temp-img-id" class="aligncenter" title="" src="'.$icon.'" alt="" width="150" height="150" /></td>'.
                   '<td style="width: 296.25px;">'.
                   '<table style="height: 182px; width: 300.117px;">'.
                   '<tbody>'.
