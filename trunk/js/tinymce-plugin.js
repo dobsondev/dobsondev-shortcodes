@@ -306,6 +306,36 @@
                 }
             },
             {
+                text: 'Embed Kodi Addon Download',
+                icon: 'icon fa fa-television dobsondev-shortcodes',
+                onclick: function() {
+                    editor.windowManager.open( {
+                        title: 'Embed Kodi Addon Download',
+                        body:
+                        [
+                            {
+                                type: 'textbox',
+                                name: 'addonid',
+                                label: 'AddonID *'
+                            },
+                            {   
+                                type: 'textbox',
+                                name: 'addonxmlurl',
+                                label: 'URL to addon.xml *'
+                            }
+                        ],
+                        onsubmit: function( e ) {
+                            // check that the required fields addonid and addonxmlurl are filled out
+                            if ( ! e.data.addonid || ! e.data.addonxmlurl ) {
+                                alert("You must fill in the AddonID and addon.xml URL to embed a Kodi Addon Download Link");
+                                return;
+                            }
+                            editor.insertContent( '[embedKodiAddonDownload addonid="' + e.data.addonid + '" addonxmlurl="' + e.data.addonxmlurl + '"]' );
+                        }
+                    });
+                }
+            },
+            {
                 text: 'Inline Code',
                 icon: 'icon fa fa-code dobsondev-shortcodes',
                 value: '[startCode][endCode]',

@@ -320,6 +320,48 @@ function dobsondev_shrtcode_embed_youtube($atts) {
 add_shortcode('embedYouTube', 'dobsondev_shrtcode_embed_youtube');
 
 
+/* Adds a shortcode for displaying kodi addon download link onto a page */
+function dobsondev_shrtcode_kodi_addon_download($atts) {
+  extract(shortcode_atts(array(
+	'addonid' => "NULL",
+	'addonxmlurl' => "NULL"
+  ), $atts));
+  if ($addonid == "NULL" || $addonxmlurl == "NULL") {
+    return '<p> Please Enter a AddonID and the path to the repos addon.xml. </p>';
+  } else {
+    $curl = curl_init();
+  	curl_setopt_array($curl, array(
+  	  CURLOPT_RETURNTRANSFER => 1,
+  	  CURLOPT_URL => $addonxmlurl,
+  	  CURLOPT_USERAGENT => 'Repo Info Grabber 1.0',
+  	  CURLOPT_HEADER => false,
+  	  CURLOPT_SSL_VERIFYPEER => false
+  	));
+    $response = curl_exec($curl);
+    // var_dump($response);
+    if ( FALSE === $response ) {
+      $output_error = '<strong>cURL ERROR</strong>: <span style="color: red">' . curl_error($curl) . '</span><br />';
+      $output_error .= '<strong>Error #</strong>: <span style="color: red">' . curl_errno($curl) . '</span><br /><br />';
+      $output_error .= 'If your error reads something like "SSL certificate problem: unable to get local issuer certificate" then please add the <strong>insecure="true"</strong> attribute to your shortcode.';
+      return $output_error;
+    }
+  
+  
+    // HIER MUSS NUN XML GEPARST WERDEN
+    $repo_addonxml = new SimpleXMLElement($response);
+    $repobaseurl = str_replace("addons.xml","",$addonxmlurl);
+    foreach ($repo_addonxml->addon as $addon) {
+      if ( $addon['id'] == $addonid ) {
+        $fileurl = $repobaseurl.$addon['id']."/".$addon['id']."-".$addon['version'].".zip";
+        $outtxt = "<a href=\"".$fileurl."\">".$addon['id']."-".$addon['version'].".zip</a>";
+      }
+    }
+    return $outtxt;
+  }
+}
+add_shortcode('embedKodiAddonDownload', 'dobsondev_shrtcode_kodi_addon_download');  
+
+
 /* Adds a shortcode for start tags for displaying inline code */
 function dobsondev_shrtcode_inline_code_start($atts) {
   extract(shortcode_atts(array(
