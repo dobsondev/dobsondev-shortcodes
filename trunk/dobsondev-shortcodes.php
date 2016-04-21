@@ -395,27 +395,27 @@ function dobsondev_shrtcode_kodi_addon_info($atts) {
       if ( $addon['id'] == $addonid ) {
         $fileurl = $repobaseurl.$addon['id']."/".$addon['id']."-".$addon['version'].".zip";
         $icon = $repobaseurl.$addon['id']."/icon.png";
-        $outtxt = '<table style="height: 10px; width: 501.25px;">'.
+        $outtxt = '<table style="height: 180px; width: 501.25px;">'.
                   '<tbody>'.
                   '<tr>'.
-                  '<td style="width: 186px; text-align: justify; vertical-align: text-top;"><img id="__wp-temp-img-id" class="aligncenter" title="" src="'.$icon.'" alt="" width="176" height="176" /></td>'.
+                  '<td style="width: 186px; text-align: justify; vertical-align: text-top;"><img id="__wp-temp-img-id" title="" src="'.$icon.'" alt="" width="176" height="176" /></td>'.
                   '<td style="width: 296.25px;">'.
-                  '<table style="height: 182px; width: 300.117px;">'.
+                  '<table style="height: 180px; width: 300.117px;">'.
                   '<tbody>'.
                   '<tr>'.
-                  '<td style="width: 116px;">Addon:</td>'.
+                  '<td style="width: 116px;"><strong>Addon:</strong></td>'.
                   '<td style="width: 168.117px;">'.$addon['name'].'</td>'.
                   '</tr>'.
                   '<tr>'.
-                  '<td style="width: 116px;">Version:</td>'.
+                  '<td style="width: 116px;"><strong>Version:</strong></td>'.
                   '<td style="width: 168.117px;">'.$addon['version'].'</td>'.
                   '</tr>'.
                   '<tr>'.
-                  '<td style="width: 116px;">Ersteller:</td>'.
+                  '<td style="width: 116px;"><strong>Ersteller:</strong></td>'.
                   '<td style="width: 168.117px;">'.$addon['provider-name'].'</td>'.
                   '</tr>'.
                   '<tr>'.
-                  '<td style="width: 116px;">Download:</td>'.
+                  '<td style="width: 116px;"><strong>Download:</strong></td>'.
                   '<td style="width: 168.117px;"><a href="'.$fileurl.'">'.$addon['id'].'-'.$addon['version'].'.zip</a></td>'.
                   '</tr>'.
                   '</tbody>'.
