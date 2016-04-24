@@ -354,10 +354,11 @@ function dobsondev_shrtcode_kodi_addon_download($atts) {
     foreach ($repo_addonxml->addon as $addon) {
       if ( $addon['id'] == $addonid ) {
         #$fileurl = $repobaseurl.$addon['id']."/".$addon['id']."-".$addon['version'].".zip";
-        if ( $repoprefix == "" ):
+        if ( $repoprefix == "" ) {
           $fileurl = $repobaseurl.$addon['id']."/".$addon['id']."-".$addon['version'].".zip";
-        else:
+        } else {
           $fileurl = $repobaseurl.$addon['id']."/".$repoprefix."/".$addon['id']."-".$addon['version'].".zip";
+        }
         $outtxt = "<a href=\"".$fileurl."\">".$addon['id']."-".$addon['version'].".zip</a>";
       }
     }
@@ -399,12 +400,13 @@ function dobsondev_shrtcode_kodi_addon_info($atts) {
     $repobaseurl = str_replace("addons.xml","",$addonxmlurl);
     foreach ($repo_addonxml->addon as $addon) {
       if ( $addon['id'] == $addonid ) {
-        if ( $repoprefix == "" ):
+        if ( $repoprefix == "" ) {
           $fileurl = $repobaseurl.$addon['id']."/".$addon['id']."-".$addon['version'].".zip";
           $icon = $repobaseurl.$addon['id']."/icon.png";
-        else:
+        } else {
           $fileurl = $repobaseurl.$addon['id']."/".$repoprefix."/".$addon['id']."-".$addon['version'].".zip";
           $icon = $repobaseurl.$repoprefix."/".$addon['id']."/icon.png";
+        }
         $outtxt = '<table style="height: 180px; width: 501.25px;">'.
                   '<tbody>'.
                   '<tr>'.
