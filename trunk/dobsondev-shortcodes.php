@@ -324,7 +324,8 @@ add_shortcode('embedYouTube', 'dobsondev_shrtcode_embed_youtube');
 function dobsondev_shrtcode_kodi_addon_download($atts) {
   extract(shortcode_atts(array(
 	'addonid' => "NULL",
-	'addonxmlurl' => "NULL"
+	'addonxmlurl' => "NULL",
+        'repoprefix' => ""
   ), $atts));
   if ($addonid == "NULL" || $addonxmlurl == "NULL") {
     return '<p> Please Enter a AddonID and the path to the repos addon.xml. </p>';
@@ -352,7 +353,11 @@ function dobsondev_shrtcode_kodi_addon_download($atts) {
     $repobaseurl = str_replace("addons.xml","",$addonxmlurl);
     foreach ($repo_addonxml->addon as $addon) {
       if ( $addon['id'] == $addonid ) {
-        $fileurl = $repobaseurl.$addon['id']."/".$addon['id']."-".$addon['version'].".zip";
+        #$fileurl = $repobaseurl.$addon['id']."/".$addon['id']."-".$addon['version'].".zip";
+        if ( $repoprefix == "" ):
+          $fileurl = $repobaseurl.$addon['id']."/".$addon['id']."-".$addon['version'].".zip";
+        else:
+          $fileurl = $repobaseurl.$addon['id']."/".$repoprefix."/".$addon['id']."-".$addon['version'].".zip";
         $outtxt = "<a href=\"".$fileurl."\">".$addon['id']."-".$addon['version'].".zip</a>";
       }
     }
@@ -366,7 +371,8 @@ add_shortcode('embedKodiAddonDownload', 'dobsondev_shrtcode_kodi_addon_download'
 function dobsondev_shrtcode_kodi_addon_info($atts) {
   extract(shortcode_atts(array(
         'addonid' => "NULL",
-        'addonxmlurl' => "NULL"
+        'addonxmlurl' => "NULL",
+        'repoprefix' => ""
   ), $atts));
   if ($addonid == "NULL" || $addonxmlurl == "NULL") {
     return '<p> Please Enter a AddonID and the path to the repos addon.xml. </p>';
@@ -393,8 +399,12 @@ function dobsondev_shrtcode_kodi_addon_info($atts) {
     $repobaseurl = str_replace("addons.xml","",$addonxmlurl);
     foreach ($repo_addonxml->addon as $addon) {
       if ( $addon['id'] == $addonid ) {
-        $fileurl = $repobaseurl.$addon['id']."/".$addon['id']."-".$addon['version'].".zip";
-        $icon = $repobaseurl.$addon['id']."/icon.png";
+        if ( $repoprefix == "" ):
+          $fileurl = $repobaseurl.$addon['id']."/".$addon['id']."-".$addon['version'].".zip";
+          $icon = $repobaseurl.$addon['id']."/icon.png";
+        else:
+          $fileurl = $repobaseurl.$addon['id']."/".$repoprefix."/".$addon['id']."-".$addon['version'].".zip";
+          $icon = $repobaseurl.$repoprefix."/".$addon['id']."/icon.png";
         $outtxt = '<table style="height: 180px; width: 501.25px;">'.
                   '<tbody>'.
                   '<tr>'.

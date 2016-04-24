@@ -322,6 +322,11 @@
                                 type: 'textbox',
                                 name: 'addonxmlurl',
                                 label: 'URL to addon.xml *'
+                            },
+                            {
+                                type: 'textbox',
+                                name: 'repoprefix',
+                                label: 'Repo-Prefix (optional) *'
                             }
                         ],
                         onsubmit: function( e ) {
@@ -330,7 +335,7 @@
                                 alert("You must fill in the AddonID and addon.xml URL to embed a Kodi Addon Download Link");
                                 return;
                             }
-                            editor.insertContent( '[embedKodiAddonDownload addonid="' + e.data.addonid + '" addonxmlurl="' + e.data.addonxmlurl + '"]' );
+                            editor.insertContent( '[embedKodiAddonDownload addonid="' + e.data.addonid + '" addonxmlurl="' + e.data.addonxmlurl + '" repoprefix="' + e.data.repoprefix + '"]' );
                         }
                     });
                 }
@@ -352,6 +357,11 @@
                                 type: 'textbox',
                                 name: 'addonxmlurl',
                                 label: 'URL to addon.xml *'
+                            },
+                            {
+                                type: 'textbox',
+                                name: 'repoprefix',
+                                label: 'Repo-Prefix (optional) *'
                             }
                         ],
                         onsubmit: function( e ) {
@@ -360,7 +370,7 @@
                                 alert("You must fill in the AddonID and addon.xml URL to embed a Kodi Addon Download Link");
                                 return;
                             }
-                            editor.insertContent( '[embedKodiAddonInfo addonid="' + e.data.addonid + '" addonxmlurl="' + e.data.addonxmlurl + '"]' );
+                            editor.insertContent( '[embedKodiAddonInfo addonid="' + e.data.addonid + '" addonxmlurl="' + e.data.addonxmlurl + '" repoprefix="' + e.data.repoprefix + '"]' );
                         }
                     });
                 }
