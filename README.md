@@ -26,6 +26,7 @@ As of version 2.0.0 DobsonDev Shortcodes includes a TinyMCE Plugin that provides
 * Embed [Twitch Stream](http://twitch.tv/) - Embeds a Twitch Stream into the page.
 * Embed [Twitch Stream](http://twitch.tv/) Chat - Embeds the chat from a Twitch Stream into the page.
 * Embed [YouTube Video](http://youtube.com/) - Embeds a YouTube Video into the page.
+* Embed [Vimeo Video](https://vimeo.com/) - Embeds a Vimeo Video into the page.
 * Inline Code - Displays inline code snippets that are visually different than the body text.
 * Code Block - Displays a simple code block for simple, small pieces of code.
 * Button - Displays a purely CSS button with choice of color, text and link.
