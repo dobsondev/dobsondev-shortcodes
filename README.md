@@ -92,7 +92,15 @@ If you are looking to add your own custom CSS to the container around the Twitch
 
 This Shortcode will embed a YouTube video into the page. The video attribute is the YouTube video ID of the video you want to embed into the page. It can be found at the end of the URL on YouTube. For example, the video located at [https://www.youtube.com/watch?v=uCdfze1etec](https://www.youtube.com/watch?v=uCdfze1etec) has the video ID "uCdfze1etec". You will always find the video ID after the "watch?v=". The video attribute is required. The width and height attributes will set the size of the embedded video, and both are optional attributes. If they are not entered the width will default to 560 and the height will default to 315.
 
-Please note that setting the width to "auto" will not work. Rather, please set the width to "100%" to get the same effect. If you are looking to add your own custom CSS to the container around the Twitch Stream embed, the class is "div.dobdev-youtube-container". This should only be done by someone experienced using CSS, otherwise the results could cause harm to the layout of your site.
+Please note that setting the width to "auto" will not work. Rather, please set the width to "100%" to get the same effect. If you are looking to add your own custom CSS to the container around the YouTube video embed, the class is "div.dobdev-youtube-container". This should only be done by someone experienced using CSS, otherwise the results could cause harm to the layout of your site.
+
+**Embed Vimeo Video**
+
+[embedVimeo video="video-id" width="###" height="###"]
+
+This Shortcode will embed a Vimeo video into the page. The video attribute is the Vimeo video ID of the video you want to embed into the page. It can be found at the end of the URL on Vimeo. For example, the video located at [https://vimeo.com/14651522](https://vimeo.com/14651522) has the video ID "14651522". You will always find the video ID after the "/" in the Vimeo URL. The video attribute is required. The width and height attributes will set the size of the embedded video, and both are optional attributes. If they are not entered the width will default to 560 and the height will default to 315.
+
+Please note that setting the width to "auto" will not work. Rather, please set the width to "100%" to get the same effect. If you are looking to add your own custom CSS to the container around the Vimeo video embed, the class is "div.dobdev-vimeo-container". This should only be done by someone experienced using CSS, otherwise the results could cause harm to the layout of your site.
 
 **Inline Code Snippets**
 
@@ -155,6 +163,21 @@ For more information about the shortcodes avaliable through the plugin please vi
 If you have any shortcodes you want to suggest or to add to the plugin, please contact me at [alex@dobsondev.com](mailto:alex@dobsondev.com).
 
 # Changelog
+
+## 2.1
+
+**New Features**
+
+* Added a shortcode for embedding Vimeo videos (2.1.0)
+* Added TinyMCE GUI option for Vimeo Embeds (2.1.0)
+* Added a shortcode for embedding Kodi addon download link - special thanks to [tobias-d-oe](https://github.com/tobias-d-oe) who contributed this shortcode via [GitHub](https://github.com/) (2.1.0)
+* Added a shortcode for embedding Kodi addon information - special thanks to [tobias-d-oe](https://github.com/tobias-d-oe) who contributed this shortcode via [GitHub](https://github.com/) (2.1.0)
+* Updated Font Awesome to version 4.6.3 (2.1.0)
+
+**Bug Fixes**
+
+* Changed the way the YouTube embed works with line breaks before the container div (2.1.0)
+* Formated some of the code for the Kodi addon download link and Kodi addon information shortcodes (2.0.1)
 
 ## 2.0
 
