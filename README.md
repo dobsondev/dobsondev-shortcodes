@@ -32,6 +32,7 @@ As of version 2.0.0 DobsonDev Shortcodes includes a TinyMCE Plugin that provides
 * Button - Displays a purely CSS button with choice of color, text and link.
 * User Interaction Messages - Displays a message with appropriate color that you can use to notify users of how their interaction is working.
 * Related Posts - Displays manually entered related posts on your page that cycle through in a little slideshow.
+* Social Share - Displays a section for sharing your page on social media, shows links for Twitter, Facebook, Google Plus and Linkedin.
 
 **Embed PDF**
 
@@ -150,6 +151,12 @@ This shortcode will create a small slideshow of related posts wherever you put i
 
 Please note that this shortcode should only be used on posts, NOT pages. It will cause pages to hang.
 
+**Social Share**
+
+[socialShare]
+
+This shortcode will create a section with links for sharing your page or post to Twitter, Facebook, Google Plus and Linkedin. The links are color coded to match the colors of each of their respective websites. You can use this like a normal shortcode in your page/post's content or you can add it to your template files by using "echo do_shortcode('[socialShare]');".
+
 # Installation
 
 1. Upload the entire dobsondev-shortcodes folder to the /wp-content/plugins/ directory.
@@ -169,6 +176,7 @@ If you have any shortcodes you want to suggest or to add to the plugin, please c
 
 **New Features**
 
+* Added a shortcode for displaying a social sharing section with links to share to Twitter, Facebook, Google Plus and Linkedin (2.1.1)
 * Added a shortcode for embedding Vimeo videos (2.1.0)
 * Added TinyMCE GUI option for Vimeo Embeds (2.1.0)
 * Added a shortcode for embedding Kodi addon download link - special thanks to [tobias-d-oe](https://github.com/tobias-d-oe) who contributed this shortcode via [GitHub](https://github.com/) (2.1.0)
