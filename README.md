@@ -170,6 +170,10 @@ For more information about the shortcodes avaliable through the plugin please vi
 
 If you have any shortcodes you want to suggest or to add to the plugin, please contact me at [alex@dobsondev.com](mailto:alex@dobsondev.com).
 
+#License
+
+DobsonDev Shortcodes is licensed under the GNU GENERAL PUBLIC LICENSE. Please see `LICENSE` for details.
+
 # Changelog
 
 ## 2.1
