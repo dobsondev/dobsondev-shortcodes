@@ -3,7 +3,7 @@ DobsonDev Shortcodes
 
 A collection of helpful shortcodes for use with WordPress sites. Please download from the [Offical WordPress Repository](https://wordpress.org/plugins/dobsondev-shortcodes/) for easiest installation. If you would like to donate please [click here](http://dobsondev.com/donate/).
 
-Copyright 2014  Alex Dobson  (email : [alex@dobsondev.com](mailto:alex@dobsondev.com))
+Copyright 2017  Alex Dobson  (email : [alex@dobsondev.com](mailto:alex@dobsondev.com))
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License, version 2, as published by the Free Software Foundation.
 
