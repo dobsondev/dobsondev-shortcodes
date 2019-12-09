@@ -1,0 +1,225 @@
+div.dobdev-youtube-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px; height: 0; overflow: hidden;
+}
+div.dobdev-youtube-container iframe,
+div.dobdev-youtube-container object,
+div.dobdev-youtube-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+div.dobdev-vimeo-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+div.dobdev-vimeo-container iframe,
+div.dobdev-vimeo-container object,
+div.dobdev-vimeo-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+code.dobdev-code-inline {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+pre.dobdev-code-block {
+  background: none repeat scroll 0% 0% #111;
+  color: #EEE;
+  border-radius: 3px 3px 3px 3px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 8px;
+}
+a.dobdev-red-button {
+  display: inline-block;
+  background: #D11 none no-repeat right top;
+  padding: 15px;
+  border-radius: 5px;
+  border: 5px solid #D11;
+  color: #FFF;
+  text-decoration: none;
+}
+a.dobdev-red-button:hover {
+  background: #FFF none no-repeat right top;
+  color: #D11;
+}
+a.dobdev-blue-button {
+  display: inline-block;
+  width: auto;
+  background: #09F none no-repeat right top;
+  padding: 15px;
+  border-radius: 5px;
+  border: 5px solid #09F;
+  color: #FFF;
+  text-decoration: none;
+}
+a.dobdev-blue-button:hover {
+  background: #FFF none no-repeat right top;
+  color: #09F;
+}
+a.dobdev-green-button {
+  display: inline-block;
+  background: #090 none no-repeat right top;
+  padding: 15px;
+  border-radius: 5px;
+  border: 5px solid #090;
+  color: #FFF;
+  text-decoration: none;
+}
+a.dobdev-green-button:hover {
+  background: #FFF none no-repeat right top;
+  color: #090;
+}
+a.dobdev-orange-button {
+  display: inline-block;
+  background: #F70 none no-repeat right top;
+  padding: 15px;
+  border-radius: 5px;
+  border: 5px solid #F70;
+  color: #FFF;
+  text-decoration: none;
+}
+a.dobdev-orange-button:hover {
+  background: #FFF none no-repeat right top;
+  color: #F70;
+}
+a.dobdev-purple-button {
+  display: inline-block;
+  background: #909 none no-repeat right top;
+  padding: 15px;
+  border-radius: 5px;
+  border: 5px solid #909;
+  color: #FFF;
+  text-decoration: none;
+}
+a.dobdev-purple-button:hover {
+  background: #FFF none no-repeat right top;
+  color: #909;
+}
+a.dobdev-turquoise-button {
+  display: inline-block;
+  background: #099 none no-repeat right top;
+  padding: 15px;
+  border-radius: 5px;
+  border: 5px solid #099;
+  color: #FFF;
+  text-decoration: none;
+}
+a.dobdev-turquoise-button:hover {
+  background: #FFF none no-repeat right top;
+  color: #099;
+}
+div.dobdev-info-msg,
+div.dobdev-success-msg,
+div.dobdev-warning-msg,
+div.dobdev-error-msg {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 3px 3px 3px 3px;
+}
+div.dobdev-info-msg {
+  color: #059;
+  background-color: #BEF;
+}
+div.dobdev-success-msg {
+  color: #270;
+  background-color: #DFF2BF;
+}
+div.dobdev-warning-msg {
+  color: #9F6000;
+  background-color: #FEEFB3;
+}
+div.dobdev-error-msg {
+  color: #D8000C;
+  background-color: #FFBABA;
+}
+div.dobdev-related-posts-post {
+  display: none;
+}
+div.dobdev-related-posts-post a {
+  text-decoration: none;
+}
+div.dobdev-social-share {
+  text-align: center;
+}
+div.dobdev-social-share a.share-btn {
+  display: inline-block;
+  color: #ffffff;
+  border: none;
+  padding: 0.5em;
+  width: 4em;
+  opacity: 0.9;
+  box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
+  outline: none;
+  text-align: center;
+}
+div.dobdev-social-share a.share-btn:hover {
+  color: #eeeeee;
+}
+div.dobdev-social-share a.share-btn:active {
+  position: relative;
+  top: 2px;
+  box-shadow: none;
+  color: #e2e2e2;
+  outline: none;
+}
+div.dobdev-social-share a.share-btn.twitter {
+  background: #55acee;
+}
+div.dobdev-social-share a.share-btn.google-plus {
+  background: #dd4b39;
+}
+div.dobdev-social-share a.share-btn.facebook {
+  background: #3B5998;
+}
+div.dobdev-social-share a.share-btn.stumbleupon {
+  background: #EB4823;
+}
+div.dobdev-social-share a.share-btn.reddit {
+  background: #ff5700;
+}
+div.dobdev-social-share a.share-btn.linkedin {
+  background: #4875B4;
+}
+div.dobdev-social-share a.share-btn.email {
+  background: #444444;
+}
+/*
+ * TinyMCE Plugin CSS
+ */
+i.dobsondev-icon {
+  background-image: url('../res/imgs/dd-shortcodes.png');
+}
+/* Required for FontAwesome icons to work properly in TinyMCE */
+i.fa.dobsondev-shortcodes {
+  font: 400 20px/1 FontAwesome !important;
+  padding: 0;
+  vertical-align: top;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-left: -2px;
+  padding-right: 2px;
+}
+/* Required for Dashicons to work properly in TinyMCE */
+i.mce-i-icon.dobsondev-shortcodes {
+  font: 400 20px/1 dashicons;
+  padding: 0;
+  vertical-align: top;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-left: -2px;
+  padding-right: 2px;
+}

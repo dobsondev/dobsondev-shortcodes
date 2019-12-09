@@ -189,6 +189,7 @@ DobsonDev Shortcodes is licensed under the GNU GENERAL PUBLIC LICENSE. Please se
 
 **Bug Fixes**
 
+* Fixed bug with Parsedown if other plugins used the same library and didn't change the class name (2.1.12)
 * Tested up to WordPress 5.3 (2.1.11)
 * Changed the way the YouTube embed works with line breaks before the container div (2.1.0)
 * Formated some of the code for the Kodi addon download link and Kodi addon information shortcodes (2.0.1)
